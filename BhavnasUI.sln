@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhavnasUI", "BhavnasUI\BhavnasUI.csproj", "{97180345-B5C1-4902-A13B-E146437E433E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhavnasUI.data", "BhavnasUI.data\BhavnasUI.data.csproj", "{C42E9F13-261D-414A-B0A2-287CBF5311ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{97180345-B5C1-4902-A13B-E146437E433E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97180345-B5C1-4902-A13B-E146437E433E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97180345-B5C1-4902-A13B-E146437E433E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42E9F13-261D-414A-B0A2-287CBF5311ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42E9F13-261D-414A-B0A2-287CBF5311ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42E9F13-261D-414A-B0A2-287CBF5311ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42E9F13-261D-414A-B0A2-287CBF5311ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,1031 @@
+﻿
+@{
+    ViewBag.Title = "HomeIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    img {
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    .gallery {
+        background-color: #dbddf1;
+        padding: 80px 0;
+    }
+
+        .gallery img {
+            background-color: #ffffff;
+            padding: 15px;
+            width: 100%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+
+    #gallery-modal .modal-img {
+        width: 100%;
+    }
+
+
+    .bestSeller img {
+        min-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .auto-input {
+        background: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotion {
+        /*        background: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+        color: deeppink;
+    }
+
+    .auto-inputText {
+        background: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .auto-inputText2 {
+        background: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .typed-cursor {
+        display: none;
+    }
+</style>
+<div class="jumbotron jumbotron-fluid page-header">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3 mt-lg-5">Delivery</h1>
+        @*<div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Product</p>
+            </div>*@
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="card" style="border-radius:10px;overflow:hidden;">
+        <div class="card-body">
+            <h1 class="text-center" style="color:deeppink;">...Offers...</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-top:20px;">
+        <div class="col-sm-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <img src="~/Content/User/img/laddo.jpg" class="img-fluid image-popup" style="height:300px;" />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card mb-4">
+                <div class="card-body">
+
+                    <img src="~/Content/User/img/kaju katli.jpeg" class="img-fluid image-popup" id="imgKaju" style="height:300px;" />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <img src="~/Content/User/img/bhavnaOffer3.jpg" class="img-fluid image-popup" style="height:300px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* Browse by Flavours*@
+<div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:20px;">
+    <div class="accordion-item">
+        <center>
+            <h1 class="accordion-header">
+                <button class="accordion-button collapsed  d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h1 style="color:deeppink; margin-left:auto;">Browse by Flavours</h1>
+                </button>
+            </h1>
+
+        </center>
+        <div id="flush-collapseOne" style="background-color: #ed217c;" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+            <div class="container p-md-5">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/bhavnaOffer2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">White Forest</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/bhavnaImg2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Mix Fruit</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/bhavnaImg1.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Butterscotch</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/kiwi.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Kiwi</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/Pineapple.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Pineapple</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/Strawberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Strawberry</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/blueberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Blueberry</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="~/Content/User/img/chocolate.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                <h6 style="color:deeppink;" class="text-center">Chocolate</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@* end *@
+
+
+
+@* Cakes photos starts*@
+
+<div class="conatiner-fulid">
+    <div class="jumbotron jumbotron-fluid page-header cakePhotoBanner" style="margin-top:20px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Cake's Photo</h1>
+        </div>
+    </div>
+    <div class="accordion accordion-flush conatiner-fulid" id="accordionFlushExample" style="margin-top:-30px;">
+        <div class="accordion-item">
+            <center>
+                <h1 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h4 style="color:deeppink; margin-left:auto;">See Photos</h4>
+                    </button>
+                </h1>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: #ed217c;">
+                    <div class="container p-md-5">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/bhavnaOffer2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">White Forest</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/bhavnaImg2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Mix Fruit</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/bhavnaImg1.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Butterscotch</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/kiwi.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Kiwi</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:20px;">
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/Pineapple.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Pineapple</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/Strawberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Strawberry</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/blueberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Blueberry</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <img src="~/Content/User/img/chocolate.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                        <h6 style="color:deeppink;" class="text-center">Chocolate</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+        </div>
+    </div>
+</div>
+
+@* Cakes photos Ends*@
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <img src="~/Content/User/img/birthday.jpg" class="img-fluid" style="height: 350px; width: 100%" />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+            <div class="auto-input" style="color: deeppink; font-size: 40px; font-weight:bold; margin-top:94px;"></div>
+        </div>
+    </div>
+
+</div>
+
+
+@*best sellers starts*@
+
+<div class="conatiner-fulid">
+    <div class="jumbotron jumbotron-fluid page-header girlsPhotoBanner" style="margin-top:20px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Best Seller</h1>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample" style="margin-top:-30px;">
+        <div class="accordion-item" style="border:none;">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4 style="color:deeppink; margin-left:auto;">Products</h4>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="bestSeller">
+                                    <img src="~/Content/User/img/snack1.jpg" class="img-fluid image-popup" />
+                                    <h6 style="color:deeppink; margin-top:10px;" class="text-center">Abcd Cake shopy</h6>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="bestSeller">
+                                    <img src="~/Content/User/img/snack3.jpeg" class="img-fluid image-popup" />
+                                    <h6 style="color: deeppink; margin-top: 10px;" class="text-center">Abcd Cake shopy</h6>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="bestSeller">
+
+                                    <img src="~/Content/User/img/snack5.jpeg" class="img-fluid image-popup" />
+                                    <h6 style="color: deeppink; margin-top: 10px;" class="text-center">Abcd Cake shopy</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="bestSeller">
+
+                                    <img src="~/Content/User/img/snack8.jpeg" class="img-fluid image-popup" />
+                                    <h6 style="color: deeppink; margin-top: 10px;" class="text-center">Abcd Cake shopy</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+@*best seller end*@
+
+
+
+<div class="conatiner-fulid">
+    <div class="jumbotron jumbotron-fluid page-header girlsPhotoBanner" style="margin-top:20px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Girl's Cakes</h1>
+        </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:-30px;">
+        <div class="accordion-item">
+            <h1 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <h4 style="color:deeppink; margin-left:auto;">See Photos</h4>
+                </button>
+            </h1>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: #ed217c;">
+                <div class="container p-md-5">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaOffer2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">White Forest</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaImg2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Mix Fruit</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaImg1.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Butterscotch</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/kiwi.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Kiwi</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/Pineapple.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Pineapple</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/Strawberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Strawberry</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/blueberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Blueberry</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/chocolate.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chocolate</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="auto-inputText" style="font-size: 40px; font-weight:bold; margin-top:94px;"></div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <video style="height: 350px; width: 100%" controls>
+                        <source src="~/Content/User/Video/video.mp4" type="video/mp4" autoplay>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*Boys Cakes starts*@
+
+<div class="conatiner-fulid">
+    <div class="jumbotron jumbotron-fluid page-header girlsPhotoBanner" style="margin-top:20px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Boys Cakes</h1>
+        </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:-30px;">
+        <div class="accordion-item">
+            <h1 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <h4 style="color:deeppink; margin-left:auto;">See Photos</h4>
+                </button>
+            </h1>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: #ed217c;">
+                <div class="container p-md-5">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaOffer2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">White Forest</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaImg2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Mix Fruit</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bhavnaImg1.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Butterscotch</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/kiwi.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Kiwi</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/Pineapple.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Pineapple</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/Strawberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Strawberry</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/blueberry.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Blueberry</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/chocolate.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chocolate</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Boys Cakes end*@
+
+
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <iframe style="height: 350px; width: 100%" src="https://www.youtube.com/embed/3PuCI76MJME" title="bhavnas cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="auto-inputText2" style="color: deeppink; font-size: 40px; font-weight:bold; margin-top:94px;"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="row">
+    <div class="card" style="border-radius:10px; margin-top:20px;">
+        <div class="card-body">
+            <h1 class="text-center" style="color:deeppink;">Browse by Cakes Types...</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-12">
+            <div class="owl-carousel service-carousel">
+                <div class="service-item">
+                    <div class="position-relative text-center bg-light rounded  p-4 pb-2">
+                        <img src="~/Content/User/img/birthday.jpg" class="img-fluid image-popup" style="height:250px;" />
+                        <h5 class="font-weight-semi-bold mt-5" style="color:deeppink;">Classic Cake</h5>
+                    </div>
+                </div>
+                <div class="service-item">
+
+                    <div class="position-relative text-center bg-light rounded  p-4 pb-2">
+                        <img src="~/Content/User/img/anniversary.jpg" class="img-fluid image-popup" style="height:250px;" />
+                        <h5 class="font-weight-semi-bold mt-5" style="color:deeppink;">Premium Cake</h5>
+                    </div>
+                </div>
+                <div class="service-item">
+
+                    <div class="position-relative text-center bg-light rounded  p-4 pb-2">
+                        <img src="~/Content/User/img/engagement.JPG" class="img-fluid image-popup" style="height:250px;" />
+                        <h5 class="font-weight-semi-bold mt-5" style="color:deeppink;">Classic Cake</h5>
+                    </div>
+                </div>
+                <div class="service-item">
+
+                    <div class="position-relative text-center bg-light rounded p-4 pb-2">
+                        <img src="~/Content/User/img/butterscotch.JPG" class="img-fluid image-popup" style="height:250px;" />
+                        <h5 class="font-weight-semi-bold mt-5" style="color:deeppink;">Designer Cake</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*Snack photo start*@
+<div class="conatiner-fulid">
+    <div class="jumbotron jumbotron-fluid page-header snackBanner" style="margin-top:30px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Snack's</h1>
+        </div>
+
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:-30px;">
+        <div class="accordion-item">
+            <h1 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    <h4 style="color:deeppink; margin-left:auto;">See Photos</h4>
+                </button>
+            </h1>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: #ed217c;">
+                <div class="container p-md-5">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack1.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Samosa</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack3.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chakali</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack4.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chakali-Ladu</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack5.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Gulab Jamun</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack6.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chivda</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack7.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Fafda</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack8.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Kaju Katli</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/snack3.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    <h6 style="color:deeppink;" class="text-center">Chakali</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Snack photo End*@
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            @*<div class="auto-inputText2" style="font-size: 40px; font-weight:bold; margin-top:94px;"></div>*@
+            <div class="promotion" style="font-size: 22px; font-weight:bold; margin-top:94px;">
+                "Sweeten your day with a cake, snack, or cookie from Bhavna's Cakes. We have something for everyone, from classic cakes and cookies to unique and creative treats. Come visit us today and see for yourself why we're the best bakery in town!"
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <iframe style="height: 350px; width: 100%" src="https://www.youtube.com/embed/P6pclyyTRHg" title="bhavna&#39;s cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*Bakery photo start*@
+
+<div class="conatiner-fulid">
+
+    <div class="jumbotron jumbotron-fluid page-header BakeryBanner" style="margin-top:20px; height:200px;">
+        <div class="container text-center">
+            <h1 class="text-white display-3">Bakery</h1>
+        </div>
+
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:-30px;">
+        <div class="accordion-item">
+            <h1 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h4 style="color:deeppink; margin-left:auto;">See Photos</h4>
+                </button>
+            </h1>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: #ed217c;">
+                <div class="container p-md-5">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery1.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Samosa</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery2.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Chakali</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery3.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Chakali-Ladu</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery4.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Gulab Jamun</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery5.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Chivda</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery6.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Fafda</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery7.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Kaju Katli</h6>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <img src="~/Content/User/img/bakery8.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                                    @*<h6 style="color:deeppink;" class="text-center">Chakali</h6>*@
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Bakery photo End*@
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/occasssion.jpg" class="img-fluid image-popup" style="height:300px; width:100%" />
+                    <h4 class="text-center" style="color:deeppink; margin-top:20px;">Shop by Relation</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/relation.jpg" class="img-fluid image-popup" style="height: 300px; width: 100% " />
+                    <h4 class="text-center" style="color: deeppink; margin-top: 20px;">Shop by Occassion</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="item">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="~/Content/User/img/teachersDay.jpg" class="img-fluid image-popup" style="height:150px; width:100%" />
+                        <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Teachers Day</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/mothersDay.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Mothers Day</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/valentine.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Valentines Day</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/birthdaySpecial.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Birthday Special</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px;">
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/birthday.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Birthday</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/anniversary.jpg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Anniversary</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/engagement.JPG" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Engagemnet</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-4">
+                <div class="card-body item">
+                    <img src="~/Content/User/img/chocolate.jpeg" class="img-fluid image-popup" style="height: 150px; width: 100%" />
+                    <h6 class="text-center" style="color: deeppink; margin-top: 20px;">Wedding</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cake-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="~/Content/User/img/laddo.jpg" class="modal-img" alt="modal img">
+                <div class="modal-footer">
+                    @*<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>*@
+                    <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="~/Content/User/Pages/FilterSearch.js"></script>
+<script>
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("image-popup")) {
+            const src = e.target.getAttribute("src");
+            document.querySelector(".modal-img").src = src;
+            const myModal = new bootstrap.Modal(document.getElementById('cake-modal'));
+            myModal.show();
+
+
+            // Add code to close the modal after clicking on the close button
+            document.querySelector(".close-button").addEventListener("click", function () {
+                myModal.hide();
+            });
+        }
+    })
+
+
+
+
+    var typed = new Typed(".auto-input", {
+        strings: ["Cake is not just a food, it's an Emotion", "Birthdays are Nature's way of telling us to eat more Cake", "Cake is a symbol of Hope and Joy"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+
+    var typed = new Typed(".auto-inputText", {
+        strings: ["Make a wish and blow out the candles, your birthday princess."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+    var typed = new Typed(".auto-inputText2", {
+        strings: ["Make a wish and blow out the candles, your birthday princess."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+
+

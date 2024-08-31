@@ -67,37 +67,37 @@ header {
   display: inline-block;
   position: relative;
   height: 40px;
-  margin: 20px 0 0 5%;
+  margin: 30px 0 0 5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .cd-dropdown-trigger {
-    display: block;
-    position: relative;
-    padding: 0 36px 0 20px;
-    line-height: 40px;
-    background-color: white;
-    color: black;
-    border: none;
+  display: block;
+  position: relative;
+  padding: 0 36px 0 20px;
+  line-height: 40px;
+  background-color: #111433;
+  color: #ffffff;
+  border-radius: 3px;
 }
 .no-touch .cd-dropdown-trigger:hover {
-  background-color: white;
+  background-color: #171b46;
 }
 .cd-dropdown-trigger::before, .cd-dropdown-trigger::after {
-    /* this is the arrow inside the dropdown trigger*/
-    content: '';
-    position: absolute;
-    top: 50%;
-    margin-top: -1px;
-    height: 2px;
-    width: 9px;
-    background: #ffffff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: width 0.3s, -webkit-transform 0.3s;
-    -moz-transition: width 0.3s, -moz-transform 0.3s;
-    transition: width 0.3s, transform 0.3s;
+  /* this is the arrow inside the dropdown trigger*/
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 9px;
+  background: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: width 0.3s, -webkit-transform 0.3s;
+  -moz-transition: width 0.3s, -moz-transform 0.3s;
+  transition: width 0.3s, transform 0.3s;
 }
 .cd-dropdown-trigger::before {
   right: 22px;
@@ -120,10 +120,10 @@ header {
     font-size: 1.5rem;
   }
   .cd-dropdown-trigger.dropdown-is-active {
-    background-color: white;
+    background-color: #3f8654;
   }
   .no-touch .cd-dropdown-trigger.dropdown-is-active:hover {
-    background-color: white;
+    background-color: #47975f;
   }
   .cd-dropdown-trigger.dropdown-is-active::before, .cd-dropdown-trigger.dropdown-is-active::after {
     /* transform the arrow into a 'X' */

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -45,7 +46,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -99,9 +109,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -121,7 +128,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AddtoCartController.cs" />
     <Compile Include="Controllers\CareersController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CheckOutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\FranchiseController.cs" />
@@ -132,6 +142,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddtoCartModel.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\CheckoutModel.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -151,29 +165,122 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\css\Cart.css" />
+    <Content Include="Content\css\Checkout.css" />
+    <Content Include="Content\pages\AddtoCart.js" />
+    <Content Include="Content\pages\Checkout.js" />
+    <Content Include="Content\pages\Product.js" />
+    <Content Include="Content\pages\ProductDetails.js" />
     <Content Include="Content\User\css\style.css" />
     <Content Include="Content\User\css\style.min.css" />
     <Content Include="Content\User\img\about.jpg" />
+    <Content Include="Content\User\img\alexander-zulkarnain-5qDnbpw-xTM-unsplash.jpg" />
+    <Content Include="Content\User\img\anniversary.jpg" />
+    <Content Include="Content\User\img\bakery.jpeg" />
+    <Content Include="Content\User\img\bakery1.jpeg" />
+    <Content Include="Content\User\img\bakery2.jpeg" />
+    <Content Include="Content\User\img\bakery3.jpeg" />
+    <Content Include="Content\User\img\bakery4.jpeg" />
+    <Content Include="Content\User\img\bakery5.jpeg" />
+    <Content Include="Content\User\img\bakery6.jpeg" />
+    <Content Include="Content\User\img\bakery7.jpeg" />
+    <Content Include="Content\User\img\bakery8.jpeg" />
+    <Content Include="Content\User\img\bakery9.jpeg" />
+    <Content Include="Content\User\img\benjamin-sow-dSZnxGNlP30-unsplash.jpg" />
+    <Content Include="Content\User\img\best.jpeg" />
+    <Content Include="Content\User\img\bhavnaImg1.JPG" />
+    <Content Include="Content\User\img\bhavnaImg2.jpeg" />
+    <Content Include="Content\User\img\bhavnaOffer1.jpeg" />
+    <Content Include="Content\User\img\bhavnaOffer2.jpeg" />
+    <Content Include="Content\User\img\bhavnaOffer3.jpg" />
+    <Content Include="Content\User\img\birthday.jpg" />
+    <Content Include="Content\User\img\birthdaySpecial.jpg" />
+    <Content Include="Content\User\img\Black&amp;WhiteCake.jpg" />
+    <Content Include="Content\User\img\BlackForestCake.jpg" />
+    <Content Include="Content\User\img\blueberry.jpg" />
+    <Content Include="Content\User\img\butterscotch.JPG" />
+    <Content Include="Content\User\img\cake2.jpeg" />
+    <Content Include="Content\User\img\cake3.jpeg" />
+    <Content Include="Content\User\img\cake4.jpg" />
+    <Content Include="Content\User\img\cake5.jpg" />
+    <Content Include="Content\User\img\camila-melim-RZjC6H7to1M-unsplash.jpg" />
+    <Content Include="Content\User\img\career1.png" />
+    <Content Include="Content\User\img\career2.jpg" />
+    <Content Include="Content\User\img\career3.jpg" />
+    <Content Include="Content\User\img\career4.jpg" />
+    <Content Include="Content\User\img\career5.png" />
+    <Content Include="Content\User\img\career6.png" />
     <Content Include="Content\User\img\carousel-1.jpg" />
     <Content Include="Content\User\img\carousel-2.jpg" />
+    <Content Include="Content\User\img\charles-chen-w2ZFjDnUL3w-unsplash.jpg" />
+    <Content Include="Content\User\img\chef.jpg" />
+    <Content Include="Content\User\img\children-celebrating-birthday.jpg" />
+    <Content Include="Content\User\img\choco.JPG" />
+    <Content Include="Content\User\img\chocolate.jpeg" />
+    <Content Include="Content\User\img\coco-tafoya-hvsGmHIg2U4-unsplash.jpg" />
+    <Content Include="Content\User\img\CocontCake.jpg" />
+    <Content Include="Content\User\img\cookie.jpg" />
+    <Content Include="Content\User\img\cupcakes-5116009_640.jpg" />
+    <Content Include="Content\User\img\david-holifield-g5bgYkKa8y0-unsplash.jpg" />
+    <Content Include="Content\User\img\diana-polekhina-qsTJXB6zTLg-unsplash.jpg" />
+    <Content Include="Content\User\img\engagement.JPG" />
+    <Content Include="Content\User\img\enis-yavuz-tuuh4DrgMpU-unsplash.jpg" />
+    <Content Include="Content\User\img\food-photographer-E94j3rMcxlw-unsplash.jpg" />
+    <Content Include="Content\User\img\food-photographer-Fn6dPYtPUMc-unsplash.jpg" />
     <Content Include="Content\User\img\footerlogo.PNG" />
+    <Content Include="Content\User\img\haseeb-jamil-OvNsLemoVEw-unsplash.jpg" />
     <Content Include="Content\User\img\header.jpg" />
+    <Content Include="Content\User\img\HomeBanner1.jpg" />
+    <Content Include="Content\User\img\ivan-torres-MQUqbmszGGM-unsplash.jpg" />
+    <Content Include="Content\User\img\joyce-panda-lpsbMRRqMQw-unsplash.jpg" />
+    <Content Include="Content\User\img\kaju katli.jpeg" />
+    <Content Include="Content\User\img\karina-kungla-8MS80Ztsugo-unsplash.jpg" />
+    <Content Include="Content\User\img\kiwi.JPG" />
+    <Content Include="Content\User\img\laddo.jpg" />
+    <Content Include="Content\User\img\mae-mu-kID9sxbJ3BQ-unsplash.jpg" />
+    <Content Include="Content\User\img\michael-chiara-BLy3LMYMVvE-unsplash.jpg" />
+    <Content Include="Content\User\img\monika-grabkowska-pHeX8H9WQpY-unsplash.jpg" />
+    <Content Include="Content\User\img\mothersDay.jpg" />
+    <Content Include="Content\User\img\occasssion.jpg" />
+    <Content Include="Content\User\img\pille-r-priske-U0PiIS4Uvkc-unsplash.jpg" />
+    <Content Include="Content\User\img\Pineapple.jpg" />
+    <Content Include="Content\User\img\pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg" />
+    <Content Include="Content\User\img\pixzolo-photography-OPncjOLjXis-unsplash.jpg" />
     <Content Include="Content\User\img\portfolio-1.jpg" />
     <Content Include="Content\User\img\portfolio-2.jpg" />
     <Content Include="Content\User\img\portfolio-3.jpg" />
     <Content Include="Content\User\img\portfolio-4.jpg" />
     <Content Include="Content\User\img\portfolio-5.jpg" />
     <Content Include="Content\User\img\portfolio-6.jpg" />
+    <Content Include="Content\User\img\pranav-kumar-jain-NyHDsR7zEgY-unsplash.jpg" />
+    <Content Include="Content\User\img\pranav-kumar-jain-U_jLPm_cR2Y-unsplash.jpg" />
     <Content Include="Content\User\img\product-1.jpg" />
     <Content Include="Content\User\img\product-2.jpg" />
     <Content Include="Content\User\img\product-3.jpg" />
     <Content Include="Content\User\img\product-4.jpg" />
     <Content Include="Content\User\img\product-5.jpg" />
+    <Content Include="Content\User\img\product.jpeg" />
     <Content Include="Content\User\img\promotion.jpg" />
+    <Content Include="Content\User\img\relation.jpg" />
+    <Content Include="Content\User\img\ruth-georgiev-dvmiNXMh9d8-unsplash.jpg" />
+    <Content Include="Content\User\img\sandie-clarke-pYAbhWb_LaQ-unsplash.jpg" />
+    <Content Include="Content\User\img\sebastian-coman-photography-rwBJaJdesGg-unsplash.jpg" />
+    <Content Include="Content\User\img\sehajpal-singh-ZT9wGLDEVNs-unsplash.jpg" />
     <Content Include="Content\User\img\service-1.jpg" />
     <Content Include="Content\User\img\service-2.jpg" />
     <Content Include="Content\User\img\service-3.jpg" />
     <Content Include="Content\User\img\service-4.jpg" />
+    <Content Include="Content\User\img\shourav-sheikh-a66sGfOnnqQ-unsplash %281%29.jpg" />
+    <Content Include="Content\User\img\snack1.jpg" />
+    <Content Include="Content\User\img\snack3.jpeg" />
+    <Content Include="Content\User\img\snack4.jpeg" />
+    <Content Include="Content\User\img\snack5.jpeg" />
+    <Content Include="Content\User\img\snack6.jpeg" />
+    <Content Include="Content\User\img\snack7.jpeg" />
+    <Content Include="Content\User\img\snack8.jpeg" />
+    <Content Include="Content\User\img\Strawberry.jpg" />
+    <Content Include="Content\User\img\swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash %287%29.jpg" />
+    <Content Include="Content\User\img\teachersDay.jpg" />
     <Content Include="Content\User\img\team-1.jpg" />
     <Content Include="Content\User\img\team-2.jpg" />
     <Content Include="Content\User\img\team-3.jpg" />
@@ -181,7 +288,20 @@
     <Content Include="Content\User\img\testimonial-1.jpg" />
     <Content Include="Content\User\img\testimonial-2.jpg" />
     <Content Include="Content\User\img\testimonial-3.jpg" />
+    <Content Include="Content\User\img\top-view-pizza-with-red-pepper-tomato-sauce-with-copy-space.jpg" />
+    <Content Include="Content\User\img\umesh-soni-g1qlhFbWPKg-unsplash.jpg" />
+    <Content Include="Content\User\img\valentine.jpg" />
+    <Content Include="Content\User\img\VanillaCake.jpg" />
+    <Content Include="Content\User\img\victor-rutka-4FujjkcI40g-unsplash %281%29.jpg" />
+    <Content Include="Content\User\img\victor-rutka-4FujjkcI40g-unsplash.jpg" />
+    <Content Include="Content\User\img\vit-ch-Oxb84ENcFfU-unsplash.jpg" />
+    <Content Include="Content\User\img\wallpaperflare.com_wallpaper %282%29.jpg" />
+    <Content Include="Content\User\img\wallpaperflare.com_wallpaper %283%29.jpg" />
+    <Content Include="Content\User\img\wallpaperflare.com_wallpaper %284%29.jpg" />
+    <Content Include="Content\User\img\wallpaperflare.com_wallpaper %285%29.jpg" />
     <Content Include="Content\User\img\WhatsApp Image 2023-10-02 at 10.29.56 PM.jpeg" />
+    <Content Include="Content\User\img\yukiko-kanada-5C2JmojQ6hQ-unsplash.jpg" />
+    <Content Include="Content\User\img\yulia-khlebnikova-FDYbS43jUrU-unsplash.jpg" />
     <Content Include="Content\User\js\main.js" />
     <Content Include="Content\User\lib\counterup\counterup.min.js" />
     <Content Include="Content\User\lib\easing\easing.js" />
@@ -209,6 +329,8 @@
     <Content Include="Content\User\lib\waypoints\waypoints.min.js" />
     <Content Include="Content\User\mail\contact.js" />
     <Content Include="Content\User\mail\jqBootstrapValidation.min.js" />
+    <Content Include="Content\User\Pages\FilterSearch.js" />
+    <Content Include="Content\User\Video\video.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -313,11 +435,16 @@
     <Content Include="Content\User\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="Content\User\scss\bootstrap\scss\_variables.scss" />
     <Content Include="Content\User\scss\style.scss" />
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Content\User\img\cake.avif" />
+    <Content Include="Content\User\img\snack2.webp" />
+    <Content Include="Content\User\img\celebration.webp" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -346,10 +473,14 @@
     <Content Include="Views\Feedback\FeedbackIndex.cshtml" />
     <Content Include="Views\Location\LocationIndex.cshtml" />
     <Content Include="Views\ProductDetail\ProductDetailIndex.cshtml" />
+    <Content Include="Views\Home\HomeIndex.cshtml" />
+    <Content Include="Views\Product\SeeMoreProducts.cshtml" />
+    <Content Include="Views\AddtoCart\CartIndex.cshtml" />
+    <Content Include="Views\CheckOut\CheckoutIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -375,8 +506,12 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BhavnasUI.data\BhavnasUI.data.csproj">
+      <Project>{c42e9f13-261d-414a-b0a2-287cbf5311ed}</Project>
+      <Name>BhavnasUI.data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -411,7 +546,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

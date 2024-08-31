@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BhavanasERPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAddtocart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerIP" Type="nvarchar(max)" />
+    <Property Name="ProductID" Type="bigint" />
+    <Property Name="Quantity" Type="bigint" />
+    <Property Name="Size" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Shipping" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="UpdationDate" Type="datetime" />
+    <Property Name="GrandTotal" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblcarrers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="MobileNo" Type="bigint" />
+    <Property Name="Dateofbirth" Type="datetime" />
+    <Property Name="ResumeFile" Type="nvarchar(max)" />
+    <Property Name="Position" Type="nvarchar" MaxLength="100" />
+    <Property Name="ExpectatedSalary" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="EmpAddress" Type="nvarchar(max)" />
+    <Property Name="creationdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CategoryDetails" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsAvailable" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="12" />
+    <Property Name="State" Type="nvarchar" MaxLength="20" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="PinCode" Type="nvarchar" MaxLength="6" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCustomerInvoice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="CustomerOrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="DeliveryPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryContact" Type="nvarchar" MaxLength="12" />
+    <Property Name="DeliveryCity" Type="nvarchar" MaxLength="30" />
+    <Property Name="DeliveryState" Type="nvarchar" MaxLength="30" />
+    <Property Name="DeliveryBy" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="30" />
+    <Property Name="PayableAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCustomerInvoiceDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="CustomerInvoiceId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblCustomerOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="TransactionMode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCustomerOrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerOrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="TransactionMode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="20" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFeedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="12" />
+    <Property Name="Rating" Type="nvarchar" MaxLength="5" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tblFranchise">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegisteredNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="RegisteredName" Type="nvarchar" MaxLength="30" />
+    <Property Name="OwnerFirstName" Type="nvarchar" MaxLength="30" />
+    <Property Name="OwnerLastName" Type="nvarchar" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar" MaxLength="30" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="State" Type="nvarchar" MaxLength="20" />
+    <Property Name="Zipcode" Type="nvarchar" MaxLength="10" />
+    <Property Name="NetWorth" Type="nvarchar" MaxLength="30" />
+    <Property Name="LiquidAsset" Type="nvarchar" MaxLength="50" />
+    <Property Name="AreaOfDevelopmentInterest" Type="nvarchar" MaxLength="50" />
+    <Property Name="FranchiseCertificate" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="12" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblFranchiseAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FranchiseId" Type="int" Nullable="false" />
+    <Property Name="InvoiceId" Type="int" Nullable="false" />
+    <Property Name="TransactionNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="TransactionMode" Type="nvarchar" MaxLength="20" />
+    <Property Name="TransactionDate" Type="datetime" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreditAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DebitAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BalanceAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="tblFranchiseInvoice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FranchiseId" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayableAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryState" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="Deliverycontact" Type="nvarchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="tblFranchiseInvoiceDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FranchiseId" Type="int" Nullable="false" />
+    <Property Name="InvoiceId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblFranchiseOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FranchiseId" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="City" Type="nvarchar" MaxLength="30" />
+    <Property Name="State" Type="nvarchar" MaxLength="30" />
+    <Property Name="Country" Type="nvarchar" MaxLength="30" />
+    <Property Name="DeliveryBy" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryContactNo" Type="nvarchar" MaxLength="12" />
+    <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="20" />
+    <Property Name="OrderAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DeliveryAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IGST" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalPayableAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="tblFranchiseOrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="FranchiseId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="MFGDate" Type="datetime" />
+    <Property Name="ExpiryDate" Type="datetime" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Size" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="10" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="Shipping" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="BhavanasERPModelStoreContainer">
+    <EntitySet Name="tblAddtocart" EntityType="Self.tblAddtocart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblcarrers" EntityType="Self.tblcarrers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCategory" EntityType="Self.tblCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomer" EntityType="Self.tblCustomer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerInvoice" EntityType="Self.tblCustomerInvoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerInvoiceDetails" EntityType="Self.tblCustomerInvoiceDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerOrder" EntityType="Self.tblCustomerOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerOrderDetails" EntityType="Self.tblCustomerOrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFeedback" EntityType="Self.tblFeedback" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchise" EntityType="Self.tblFranchise" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchiseAccount" EntityType="Self.tblFranchiseAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchiseInvoice" EntityType="Self.tblFranchiseInvoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchiseInvoiceDetails" EntityType="Self.tblFranchiseInvoiceDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchiseOrder" EntityType="Self.tblFranchiseOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFranchiseOrderDetails" EntityType="Self.tblFranchiseOrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblProduct" EntityType="Self.tblProduct" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

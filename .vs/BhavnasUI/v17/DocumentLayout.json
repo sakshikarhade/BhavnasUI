@@ -1,0 +1,521 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\BhavnasUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|f:\\bhavnasui\\bhavnasui\\views\\checkout\\checkoutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\checkout\\checkoutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|F:\\BhavnasUI\\bhavnasui.data\\tblcustomerorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|solutionrelative:bhavnasui.data\\tblcustomerorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\models\\checkoutmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\models\\checkoutmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\models\\addtocartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\models\\addtocartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\pages\\checkout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\pages\\checkout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\addtocart\\cartindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\addtocart\\cartindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\pages\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\pages\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|F:\\BhavnasUI\\bhavnasui.data\\tblcustomerorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|solutionrelative:bhavnasui.data\\tblcustomerorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|F:\\BhavnasUI\\bhavnasui.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|solutionrelative:bhavnasui.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|F:\\BhavnasUI\\bhavnasui.data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|solutionrelative:bhavnasui.data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|F:\\BhavnasUI\\bhavnasui.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42E9F13-261D-414A-B0A2-287CBF5311ED}|BhavnasUI.data\\BhavnasUI.data.csproj|solutionrelative:bhavnasui.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\controllers\\productdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\controllers\\productdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\home\\homeindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\home\\homeindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\productdetail\\productdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\productdetail\\productdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\pages\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\pages\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\product\\productindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\product\\productindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\css\\checkout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\css\\checkout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\about\\aboutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\about\\aboutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\contact\\contactindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\contact\\contactindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|F:\\BhavnasUI\\bhavnasui\\views\\careers\\careersindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97180345-B5C1-4902-A13B-E146437E433E}|BhavnasUI\\BhavnasUI.csproj|solutionrelative:bhavnasui\\views\\careers\\careersindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAOsAAAAAAAAAAAAAAPIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T11:21:23.95Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckoutModel.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Models\\CheckoutModel.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Models\\CheckoutModel.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Models\\CheckoutModel.cs",
+              "RelativeToolTip": "BhavnasUI\\Models\\CheckoutModel.cs",
+              "ViewState": "AQIAAJgAAAAAMDMzMzMbwAwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T08:49:45.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\_ViewStart.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T10:18:24.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckoutIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\CheckOut\\CheckoutIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\CheckOut\\CheckoutIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\CheckOut\\CheckoutIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\CheckOut\\CheckoutIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T07:09:40.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tblCustomerOrder.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI.data\\tblCustomerOrder.cs",
+              "RelativeDocumentMoniker": "BhavnasUI.data\\tblCustomerOrder.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI.data\\tblCustomerOrder.cs",
+              "RelativeToolTip": "BhavnasUI.data\\tblCustomerOrder.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwBEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T12:08:13.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckOutController.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\CheckOutController.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Controllers\\CheckOutController.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\CheckOutController.cs",
+              "RelativeToolTip": "BhavnasUI\\Controllers\\CheckOutController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwB8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T07:32:49.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CartIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\AddtoCart\\CartIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\AddtoCart\\CartIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\AddtoCart\\CartIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\AddtoCart\\CartIndex.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T10:36:08.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddtoCartModel.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Models\\AddtoCartModel.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Models\\AddtoCartModel.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Models\\AddtoCartModel.cs",
+              "RelativeToolTip": "BhavnasUI\\Models\\AddtoCartModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T08:08:16.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Checkout.js",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\Checkout.js",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\pages\\Checkout.js",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\Checkout.js",
+              "RelativeToolTip": "BhavnasUI\\Content\\pages\\Checkout.js",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-27T10:30:02.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddtoCart.js",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\AddtoCart.js",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\pages\\AddtoCart.js",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\AddtoCart.js",
+              "RelativeToolTip": "BhavnasUI\\Content\\pages\\AddtoCart.js",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwCwAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-22T08:11:19.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI.data\\Model1.edmx",
+              "RelativeDocumentMoniker": "BhavnasUI.data\\Model1.edmx",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI.data\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "BhavnasUI.data\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-08-28T09:14:13.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Web.config",
+              "RelativeDocumentMoniker": "BhavnasUI\\Web.config",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Web.config",
+              "RelativeToolTip": "BhavnasUI\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-02T10:23:41.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI.data\\Class1.cs",
+              "RelativeDocumentMoniker": "BhavnasUI.data\\Class1.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI.data\\Class1.cs",
+              "RelativeToolTip": "BhavnasUI.data\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T09:11:47.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.Config",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI.data\\App.Config",
+              "RelativeDocumentMoniker": "BhavnasUI.data\\App.Config",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI.data\\App.Config",
+              "RelativeToolTip": "BhavnasUI.data\\App.Config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-28T09:16:11.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "tblCustomerOrderDetail.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI.data\\tblCustomerOrderDetail.cs",
+              "RelativeDocumentMoniker": "BhavnasUI.data\\tblCustomerOrderDetail.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI.data\\tblCustomerOrderDetail.cs",
+              "RelativeToolTip": "BhavnasUI.data\\tblCustomerOrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T09:17:51.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAJUAAABAMzMzMzMbwJcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T11:06:23.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductDetailController.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\ProductDetailController.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Controllers\\ProductDetailController.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\ProductDetailController.cs",
+              "RelativeToolTip": "BhavnasUI\\Controllers\\ProductDetailController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T09:08:55.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BhavnasUI\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:05:47.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoryModel.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Models\\CategoryModel.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Models\\CategoryModel.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Models\\CategoryModel.cs",
+              "RelativeToolTip": "BhavnasUI\\Models\\CategoryModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T10:34:44.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Home\\HomeIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Home\\HomeIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Home\\HomeIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Home\\HomeIndex.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwCEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T07:00:38.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Models\\ProductModel.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Models\\ProductModel.cs",
+              "RelativeToolTip": "BhavnasUI\\Models\\ProductModel.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAcwGIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T11:29:18.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductDetailIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\ProductDetail\\ProductDetailIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\ProductDetail\\ProductDetailIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\ProductDetail\\ProductDetailIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\ProductDetail\\ProductDetailIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:10:54.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "BhavnasUI\\Controllers\\ProductController.cs",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BhavnasUI\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:15:19.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Product.js",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\Product.js",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\pages\\Product.js",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\pages\\Product.js",
+              "RelativeToolTip": "BhavnasUI\\Content\\pages\\Product.js",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwBwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-03T10:00:53.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Product\\ProductIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Product\\ProductIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Product\\ProductIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Product\\ProductIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T10:08:03.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Cart.css",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\css\\Cart.css",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\css\\Cart.css",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\css\\Cart.css",
+              "RelativeToolTip": "BhavnasUI\\Content\\css\\Cart.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-17T08:47:32.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Checkout.css",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\css\\Checkout.css",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\css\\Checkout.css",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\css\\Checkout.css",
+              "RelativeToolTip": "BhavnasUI\\Content\\css\\Checkout.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-12T07:55:13.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Content\\bootstrap.css",
+              "RelativeDocumentMoniker": "BhavnasUI\\Content\\bootstrap.css",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Content\\bootstrap.css",
+              "RelativeToolTip": "BhavnasUI\\Content\\bootstrap.css",
+              "ViewState": "AQIAAGsOAAAAAAAAAAAswHkOAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-12T08:20:00.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ContactIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Contact\\ContactIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Contact\\ContactIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Contact\\ContactIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Contact\\ContactIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T09:51:40.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CareersIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\Careers\\CareersIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\Careers\\CareersIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\Careers\\CareersIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\Careers\\CareersIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T09:51:36.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AboutIndex.cshtml",
+              "DocumentMoniker": "F:\\BhavnasUI\\BhavnasUI\\Views\\About\\AboutIndex.cshtml",
+              "RelativeDocumentMoniker": "BhavnasUI\\Views\\About\\AboutIndex.cshtml",
+              "ToolTip": "F:\\BhavnasUI\\BhavnasUI\\Views\\About\\AboutIndex.cshtml",
+              "RelativeToolTip": "BhavnasUI\\Views\\About\\AboutIndex.cshtml",
+              "ViewState": "AQIAAEEAAAAAMzMzMzMbwFAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T09:51:20.282Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

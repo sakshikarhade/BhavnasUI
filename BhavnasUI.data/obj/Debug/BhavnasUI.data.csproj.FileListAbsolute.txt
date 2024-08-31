@@ -1,0 +1,12 @@
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\BhavnasUI.data.dll.config
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\BhavnasUI.data.dll
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\BhavnasUI.data.pdb
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\EntityFramework.dll
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\EntityFramework.SqlServer.dll
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\EntityFramework.xml
+F:\BhavnasUI\BhavnasUI.data\bin\Debug\EntityFramework.SqlServer.xml
+F:\BhavnasUI\BhavnasUI.data\obj\Debug\BhavnasUI.data.csproj.AssemblyReference.cache
+F:\BhavnasUI\BhavnasUI.data\obj\Debug\BhavnasUI.data.csproj.CoreCompileInputs.cache
+F:\BhavnasUI\BhavnasUI.data\obj\Debug\BhavnasU.B6D5BDD4.Up2Date
+F:\BhavnasUI\BhavnasUI.data\obj\Debug\BhavnasUI.data.dll
+F:\BhavnasUI\BhavnasUI.data\obj\Debug\BhavnasUI.data.pdb
